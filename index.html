@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GBR Store</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="Imgs/gbr--store-high-resolution-logo-white-transparent.png"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home_js.css" />
+    <!-- FontAowsme -->
+    <script
+      src="https://kit.fontawesome.com/3fe726e0ad.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- script -->
+    <script src="js/swiper.js" defer></script>
+  </head>
+  <body>
+    <!--* Nav Bar -->
+
+    <header>
+      <div class="left">
+        <div class="logo">
+          <img
+            loading="lazy"
+            src="Imgs/gbr--store-high-resolution-logo-white-transparent.png"
+            alt="Ur browser dosent Support"
+          />
+        </div>
+
+        <ul>
+          <a href="#free-and-pay"><li>Free/Paid</li></a>
+          <a href="#sec--list"><li>Game on salse</li></a>
+          <a href="#footer"><li>Support</li></a>
+        </ul>
+      </div>
+
+      <div class="SignIn">
+        <a href="login.html"> <button>Sign In</button></a>
+      </div>
+    </header>
+
+    <!--* slide section  -->
+    <section class="sec--slider">
+      <div class="slider">
+        <div class="slider-imge-container">
+          <div class="slider-image" id="slider-image">
+            <div class="content">
+              <div class="content-slider-text"></div>
+              <p class="content-slider-price">Starting at</p>
+              <div class="content-slider-btns">
+                <button class="content-slider-btn buy-btn">BUY NOW</button>
+                <button
+                  class="content-slider-btn wish-btn"
+                  style="display: flex; align-items: center"
+                >
+                  <div class="icon" style="display: inline-block">
+                    <i
+                      style="font-size: 1.2vw; margin-right: 10px"
+                      class="fa-regular fa-square-plus"
+                    ></i>
+                  </div>
+                  add to wish list
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button-slide">
+        <!-- spiderman -->
+        <button class="btn-img">
+          <div>
+            <img
+              loading="lazy"
+              src="Imgs/slide games/button/SpiderMan2PS5BoxArt.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="text">Spider-Man 2</div>
+          <div class="btn-slide-function" value="0" id="spider"></div>
+        </button>
+        <!-- Assassin's Creed Mirage -->
+        <button class="btn-img">
+          <div>
+            <img
+              loading="lazy"
+              src="Imgs/slide games/button/assassin creed mirage.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text">Assassin's Creed Mirage</div>
+          <div class="btn-slide-function" value="1" id="assassin"></div>
+        </button>
+        <!--EA Sports FC 24 -->
+        <button class="btn-img">
+          <div>
+            <img
+              loading="lazy"
+              src="Imgs/slide games/button/774137.1.webp"
+              alt=""
+            />
+          </div>
+          <div class="text">EA Sports FC 24</div>
+          <div class="btn-slide-function" value="2" id="fc"></div>
+        </button>
+        <!-- Red Dead Redemption II-->
+        <button class="btn-img">
+          <div>
+            <img
+              loading="lazy"
+              src="Imgs/slide games/button/red-dead-11.jpg"
+              alt=""
+            />
+          </div>
+          <div class="text">Red Dead Redemption II</div>
+          <div class="btn-slide-function" value="3" id="reddead"></div>
+        </button>
+        <!-- G O W Ragnarock -->
+        <button class="btn-img">
+          <div>
+            <img
+              loading="lazy"
+              src="Imgs/slide games/button/GOW ragnarock.webp"
+              alt=""
+            />
+          </div>
+          <div class="text">GoW Ragnarock</div>
+          <div class="btn-slide-function" value="4" id="gow"></div>
+        </button>
+      </div>
+    </section>
+    <!--********************************************-->
+    <hr />
+
+    <!--* list section -->
+    <section class="sec--list" id="sec--list">
+      <div class="list-box">
+        <div class="btn-list">
+          <div class="btn-content">
+            <button>Games On Sales</button>
+          </div>
+          <div class="btn-list-move">
+            <button class="swipe-left">&larr;</button>
+            <button class="swipe-right">&rarr;</button>
+          </div>
+        </div>
+      </div>
+      <div class="game-list">
+        <div class="game-container">
+          <div>
+            <div class="game-content">
+              <div class="game-image">
+                <div class="icon">
+                  <i class="fa-regular fa-square-plus"></i>
+                </div>
+                <img
+                  loading="lazy"
+                  src="Imgs/Salse on list/Little_Nightmares_Box_Art.png"
+                  alt=""
+                  width="400px"
+                />
+              </div>
+              <p class="base">BASE GAME</p>
+              <span class="game-name name"> little Night Mare </span>
+              <div class="price">
+                <div class="sale">-%10</div>
+                <p class="old-price">30$</p>
+                <p class="new-price">27.5$</p>
+              </div>
+            </div>
+          </div>
+          <!--  Sekrio  -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/sekiro.jpg"
+                alt=""
+                width="400px"
+                style="object-position: -20px 0 !important"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name"> Sekiro: Shadows Die Twice </span>
+              <div class="price">
+                <div class="sale">-%20</div>
+                <p class="old-price">60$</p>
+                <p class="new-price">50.5$</p>
+              </div>
+            </div>
+          </div>
+          <!--  suicide Squad   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/suicide Squad.jpg"
+                alt=""
+                width="400px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name"
+                >Suicide Squad: Kill the Justice League
+              </span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">45$</p>
+                <p class="new-price">23.5$</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- batman arkham city   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/batman arkham city.jpg"
+                alt=""
+                width="400px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">batman arkham city </span>
+              <div class="price">
+                <div class="sale">-%25</div>
+                <p class="old-price">35$</p>
+                <p class="new-price">23.57$</p>
+              </div>
+            </div>
+          </div>
+          <!-- -minecraft   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/Minecraft-PC-Mac-Linux-Mojang-Digital-Download.webp"
+                alt=""
+                width="400px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">minecraft </span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">50$</p>
+                <p class="new-price">26.24$</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -SpiderMan remasted   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/Spider-Man_PS4_cover.jpg"
+                alt=""
+                width="400px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">SpiderMan remasted </span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">50$</p>
+                <p class="new-price">26.24$</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -Forza Horizon 4   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/Forza_Horizon_4_cover.jpg"
+                alt=""
+                width="400px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">Forza Horizon 4 </span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">30$</p>
+                <p class="new-price">17.24$</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- Dark Souls   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/darkSoulsIII.jpg"
+                alt=""
+                width="400px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">Dark SoulsIII</span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">30$</p>
+                <p class="new-price">17.24$</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- -madison   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/madison-pc-cd-key.webp"
+                alt=""
+                width="400px"
+                style="object-fit: cover; object-position: 0px -15px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">MADiSON</span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">30$</p>
+                <p class="new-price">17.24$</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- -NBA 2K24   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/nba2k24-1688744838720.jpg"
+                alt=""
+                width="400px"
+                style="object-fit: cover; object-position: -25px 0"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">NBA 2K24</span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">30$</p>
+                <p class="new-price">17.24$</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- Shadow of the Tomb Raider Definitive Edition   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/Shadow of The Tomb Raider.jpg"
+                alt=""
+                width="400px"
+                style="object-position: -27px 0"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">Shadow of the Tomb Raider </span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">30$</p>
+                <p class="new-price">17.24$</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!--Mortal Kombat 11   -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/mortal-kombat-11.webp"
+                alt=""
+                width="400px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">Mortal Kombat 11</span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">30$</p>
+                <p class="new-price">17.24$</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <!-- Jump Force  -->
+          <div>
+            <div class="game-image">
+              <div class="icon">
+                <i class="fa-regular fa-square-plus"></i>
+              </div>
+              <img
+                loading="lazy"
+                src="Imgs/Salse on list/jump foce.jpeg"
+                alt=""
+                width="400px"
+              />
+            </div>
+
+            <div class="game-content">
+              <p class="base">BASE GAME</p>
+              <span class="game-name name">Jump Force Ultimate Edition </span>
+              <div class="price">
+                <div class="sale">-%45</div>
+                <p class="old-price">30$</p>
+                <p class="new-price">17.24$</p>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </section>
+    <!--********************************************-->
+
+    <!--* section Important Salse-->
+    <section class="sec--important">
+      <div class="sec--important--container">
+        <div class="important-box box1">
+          <div class="important-box-image game-layout">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img loading="lazy" src="Imgs/important salse/stray.jpg" alt="" />
+          </div>
+
+          <span class="important-name name"> Stray</span>
+          <div class="price">
+            <div class="sale">-%90</div>
+            <p class="old-price">10$</p>
+            <p class="new-price">1$</p>
+          </div>
+        </div>
+
+        <div class="important-box box2">
+          <div class="important-box-image game-layout">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/important salse/gta-5-780x470.jpg"
+              alt=""
+            />
+          </div>
+
+          <span class="important-name name">Grand Theft Auto V </span>
+          <div class="price">
+            <div class="sale">-%70</div>
+            <p class="old-price">29.99$</p>
+            <p class="new-price">7.5$</p>
+          </div>
+        </div>
+        <div class="important-box box3">
+          <div class="important-box-image">
+            <img
+              loading="lazy"
+              src="Imgs/important salse/epic-games-connect-and-save-coupon-1920x1080-ffbfa4839a63.jpg"
+              alt=""
+            />
+          </div>
+          <span class="important-name name game-name name">
+            little Night Mare
+          </span>
+          <div class="price">
+            <div class="sale">-%10</div>
+            <p class="old-price">30$</p>
+            <p class="new-price">27.5$</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--********************************************-->
+    <!--* section Free and pay -->
+    <section id="free-and-pay" id="free-box">
+      <div class="free-pay-box free">
+        <div class="free-pay-btn-box">
+          <p class="free-pay-title">Free Games</p>
+          <button class="free-pay-btn">view more</button>
+        </div>
+        <!-- Valorant -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/free/valorant.jpg"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> Valorant </span>
+            <p class="price">Free</p>
+          </div>
+        </div>
+        <!-- Rocket League -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/free/rocket-league-nintendo-switch-front-cover.jpg"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> Rocket League </span>
+            <p class="price">Free</p>
+          </div>
+        </div>
+        <!-- Fortnite -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/free/fortnite.jpg"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> Fortnite </span>
+            <p class="price">Free</p>
+          </div>
+        </div>
+        <!-- Overwatch Vol 2 -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/free/overwatch2.webp"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> Overwatch Vol 2 </span>
+            <p class="price">Free</p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- league of legends -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/free/LOl.jpg"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> league of legends </span>
+            <p class="price">Free</p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+      <!-- pay games section -->
+      <div class="free-pay-box pay" id="pay-box">
+        <div class="free-pay-btn-box">
+          <p class="free-pay-title">Paid Games</p>
+          <button class="free-pay-btn">view more</button>
+        </div>
+        <!-- Assassin's Creed: Valhalla (Ultimate Edition) -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/pay/assassins-creed-valhalla.jpg"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> Assassin's Creed: Valhalla </span>
+            <p class="price">$39</p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- Little Nightmares II -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/pay/Little_Nightmares_II_cover.jpg"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> Little Nightmares II </span>
+            <p class="price">$25</p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- Marvel's Spider-Man: Miles Morales  -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/pay/Miles_Morales_front_cover_29.webp"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name">
+              Marvel's Spider-Man: Miles Morales
+            </span>
+            <p class="price">$69</p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- Horizon Forbidden West -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/pay/horzion frobidden west.jpg"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> Horizon Forbidden West </span>
+            <p class="price">$59</p>
+          </div>
+        </div>
+        <!--  -->
+        <!-- Far Cry 5 -->
+        <div class="game-content fp-boxes">
+          <div class="game-image">
+            <div class="icon">
+              <i class="fa-regular fa-square-plus"></i>
+            </div>
+            <img
+              loading="lazy"
+              src="Imgs/free-pay/pay/FC5.jpg"
+              alt=""
+              width="400px"
+            />
+          </div>
+          <div class="game-text">
+            <span class="game-name name"> Far Cry 5 </span>
+            <p class="price">$55</p>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="footer-upperbox">
+        <ul class="icon-list">
+          <li>
+            <a href="https://www.youtube.com/channel/UCRAM_JyaFwUJDaC1z5LkSMw"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://wa.me/+201033058554"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100051794050216"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/___gbrr___/"
+              ><i class="fa-brands fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/mohamed_algbra1"
+              ><i class="fa-brands fab fab fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+        <div class="goup-btn">
+          <a href="#"
+            ><button><i class="fa-solid fa-chevron-up"></i></button
+          ></a>
+        </div>
+      </div>
+      <!--  -->
+
+      <div class="footer-links">
+        <div class="box-links">
+          <p>Resources</p>
+          <a href="#2">Support-A-Creator</a>
+          <a href="#2">Distribute on Gbr Store</a>
+          <a href="#2">Carres</a>
+          <a href="#2">Company</a>
+        </div>
+        <div class="box-links">
+          <p>policy</p>
+          <a href="#2">Store Refund Policy</a>
+          <a href="#2">Privacy Policy</a>
+          <a href="#2">Terms of Service</a>
+        </div>
+        <div class="box-links">
+          <p>Company</p>
+          <a href="#2">About Us</a>
+          <a href="#2">Blog</a>
+          <a href="#2">Partnership</a>
+          <a href="#2">Careers</a>
+        </div>
+        <div class="box-links MadeBy-container">
+          <!--! All this are fakeNames thats from the developer imagination -->
+          <p>Made By Gbr Store</p>
+          <div class="MadeBy-content">
+            <div>
+              <a href="#2">FortBite</a>
+              <a href="#2">LMAO</a>
+              <a href="#2">ValoBug</a>
+              <a href="#2">BlackSpiderDude</a>
+            </div>
+            <div>
+              <a href="#2">MadCraft</a>
+              <a href="#2">Kid Cry299</a>
+              <a href="#2">Spider Cry At Home</a>
+              <a href="#2">WhiteSpiderDude</a>
+            </div>
+          </div>
+        </div>
+        <div class="image">
+          <div class="footer-logo-box">
+          <img id = "footer-img2"src="Imgs/gbr--store-high-resolution-logo-white-transparent.png" alt="">
+          </div>
+            <img src="Imgs/gbr--store-favicon-white.png" alt="">
+        </div>
+        
+      </div>
+    </footer>
+  </body>
+</html>

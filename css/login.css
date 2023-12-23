@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Nunito:wght@400;600;700&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Nunito', sans-serif; */
+html {
+  font-size: 62.5%;
+}
+* {
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: #121212;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 40rem;
+  height: 52rem;
+  background-color: rgb(24, 24, 28);
+  border-radius: 0.9rem;
+
+  box-shadow: 0 0 2rem 1rem rgba(0, 0, 0, 0.32);
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+/*? SIGN in Form */
+.Signbox {
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 5rem;
+}
+
+/*? logo img */
+.imagelogo {
+  position: absolute;
+  top: -4rem;
+  background-color: rgb(24, 24, 28);
+  border-top: 1px solid rgb(255, 0, 0);
+  border-left: 1px solid rgb(65, 139, 28);
+  border-bottom: 1px solid rgb(209, 232, 202);
+  border-radius: 50%;
+}
+.imagelogo img {
+  width: 7rem;
+  transform: scale(1.1);
+}
+
+.Signbox > h1 {
+  font-size: 4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.login {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  height: 22rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+/*? input fileds */
+.input-area {
+  height: 2.5rem;
+
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"]
+ {
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.411);
+  border-radius: 0.5rem;
+  outline: 0;
+  position: absolute;
+  height: 3.3rem;
+  width: 90%;
+  padding: 0 2rem;
+  background-color: transparent;
+  transition: 0.5s border-color;
+  font-size: 1.3rem;
+}
+input[type="text"]:focus,
+input[type="text"]:valid,
+input[type="password"]:focus,
+input[type="password"]:valid,
+input[type="email"]:focus + label,
+input[type="email"]:valid + label {
+  border-color: rgba(0, 132, 255, 0.993);
+}
+
+/* lable */
+.input-area label {
+  position: absolute;
+  left: 3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  z-index: 3;
+  background-color: #18181c;
+  padding: 0 0.5rem;
+  transition: all 0.25s;
+  top: 0.6rem;
+  color: rgb(179, 171, 171);
+}
+input[type="text"]:focus + label,
+input[type="text"]:valid + label,
+input[type="password"]:focus + label,
+input[type="password"]:valid + label,
+input[type="email"]:focus + label,
+input[type="email"]:valid + label {
+  color:  rgb(110, 188, 243);
+  position: absolute;
+  left: 2.5rem;
+  top: -1rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*?login foooter */
+
+.login-footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: -1rem;
+}
+/* content */
+.login-footer .content {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 1rem;
+}
+.login-footer .content > p {
+  color: #1178d3;
+  font-size: 1.2rem;
+  
+  cursor: pointer;
+  transition: 1s text-decoration;
+}
+.login-footer .content > p:hover {
+  text-decoration: underline;
+    color: #088afc;
+}
+/* button */
+.login-footer input[type="submit"] {
+  width: 50%;
+  height: 4rem;
+  border-radius: 0.8rem;
+  background-color: #0c65b8;
+  border: 0;
+  cursor: pointer;
+  transition: 0.5s background-color;
+}
+.login-footer input[type="submit"]:hover {
+  background-color: #288ae8;
+}
+ /*? Spilit the section */
+.Signbox .split {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.split hr {
+  width: 80%;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-color: #ffffff33;
+}
+.split p {
+  position: absolute;
+  left: 50%;
+  top: -1.2rem;
+  border-radius: 10rem;
+  padding: 0 1rem;
+  padding-bottom: 0.2rem;
+  background-color: #18181c;
+  z-index: 3;
+  transform: translateX(-50%);
+  border: 1px solid #ffffff50;
+}
+/*?another way section */
+.another-way {
+  margin-top: -1rem;
+  height: 11rem;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.another-way .box {
+  width: 30%;
+  height: 60%;
+  background-color: rgba(255, 255, 255, 0.87);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+.box .image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  transition: .25s background-color ;
+}
+.google {
+  background: url(../Imgs/loginPage/pngwing.com.png);
+  background-position: 20px 0;
+}
+.cloud {
+  background: url(../Imgs/loginPage/apple2.png);
+  background-position: 10px 0;
+}
+.steam {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(20, 92, 143);
+}
+.steam svg {
+  width: 60px;
+  transform: scale(0.7);
+}
+/* gloing */
+.cloud:hover, .google:hover{
+  background-color: white;
+}
+.steam:hover{
+   background-color: rgb(43, 108, 154);
+}
+.cloud:active, .google:active{
+  background-color: rgb(179, 174, 174);
+}
+.steam:active{
+   background-color: rgb(26, 67, 95);
+}
+
+
+
+/*? switcher link */
+#Sign-switch-link{
+  z-index: 111;
+  position: absolute;
+  top: 93%;
+}
+#Sign-switch-link:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  
+}
+/*? Checkbox */
+.checkbox-box {
+  display: flex;
+  align-items: center;
+}
+.checkbox-box label {
+  display: flex;
+  position: relative;
+  margin-left: 0rem;
+  padding-left: 0.2rem;
+  transition: 0.5s color;
+}
+[type="checkbox"] {
+  cursor: pointer;
+  opacity: 0;
+  z-index: 2;
+  background-color: transparent;
+}
+.checkbox-box label::before {
+  content: "";
+  border: 1px solid white;
+  cursor: pointer;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  left: -1.5rem;
+  z-index: 1;
+}
+.checkbox-box label::after {
+  content: "";
+  cursor: pointer;
+  position: absolute;
+ background-color: transparent;
+
+  left: -1.2rem;
+  top: 0.3rem;
+  z-index: 1;
+  border-left: 2px solid rgb(0, 212, 0);
+  border-bottom: 2px solid rgb(0, 255, 0);
+  transform: rotate(670deg);
+  transition: width 0.2s, 0.2s height, 0.2s opacity;
+}
+/* green true element */
+.checkbox-box input[type="checkbox"]:not(:checked) + label::after {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.checkbox-box input[type="checkbox"]:checked + label::after {
+  opacity: 1;
+  width: 0.5rem;
+  height: 0.2rem;
+}
+/* change the color of text */
+.checkbox-box input[type="checkbox"]:not(:checked) + label,
+.checkbox-box input[type="checkbox"]:not(:checked) + label a {
+  color: gray !important;
+}
+
+.checkbox-box input[type="checkbox"]:checked + label,
+.checkbox-box input[type="checkbox"]:not(:checked) + label a {
+  color: white;
+}
+/* ============================================================================================ */
+
+/* SignUP */
+.SignUp{
+  position: absolute;display: none;
+}
+.SignUp-inputs {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  height: 23rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* JS */
+.SignBox-hide{
+  display: none;
+  z-index: 0;
+}
+.SignBox-show{
+display: block;
+z-index: 10;
+}
+/*! JS animations */
+.SignBox-animate{
+  animation: changer .35s ease-in-out ;
+  
+}
+@keyframes changer {
+  0%{
+  
+  }
+  25%{
+    transform: translateX(5rem);
+  } 
+  50%{
+    transform: translateX(-5rem);
+  
+  }
+  75%{
+     transform: translateX(5rem);
+  }
+  
+  100%{
+    transform: translateX(0rem);
+    
+  }
+ 
+}
